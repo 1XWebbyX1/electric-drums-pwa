@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+
+// 0. Settings – setting up mixins
+@import
+  '00-settings/_mixins';
+
+  // 1. Generic – reset and/or normalize styles
+  @import
+    '01-generic/_base';
+
+
+// 2. Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components
+
+@import
+    '02-components/Wrapper';
+
+
+  // 3. Utilities– utilities and helper classes with ability to override anything
+@import
+    '03-utilities/_animation';
+
+// 4. Tools – media-queries for responsive design
+@import
+    '04-tools/_media-queries';

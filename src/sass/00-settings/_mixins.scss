@@ -1,0 +1,13 @@
+$phone-tab: '(max-width: 800px)';
+$tab: '(min-width: 700px) and (max-width: 800px)';
+$xl-screen: '(min-height: 1000px)';
+
+
+
+
+//media query mixin for responsive design-----------
+@mixin media($query){
+  @media only screen and #{$query}{
+    @content;
+  }
+}
