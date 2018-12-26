@@ -32,7 +32,7 @@ $ npm start
 You will then be able to access it at localhost:3000
 
 
-For production to optimized folder run :
+For production to optimized build folder run :
 ```
 $ npm run build
 ```
