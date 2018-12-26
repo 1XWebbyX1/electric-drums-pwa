@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import asyncComponent from './components/asyncComponent/async';
 import './App.scss';
 
-//dynamic import 
+//dynamic import
 const Wrapper = asyncComponent(() =>
       import('./components/Wrapper').then(module => module.default)
   );

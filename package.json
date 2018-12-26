@@ -2,6 +2,7 @@
   "name": "drum-machine-app",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://1XWebbyX1.github.io/electric-drums-pwa",
   "dependencies": {
     "jquery": "^3.3.1",
     "node-sass": "^4.11.0",
@@ -13,7 +14,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "drum-machine-app"

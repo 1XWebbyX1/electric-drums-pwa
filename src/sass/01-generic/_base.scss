@@ -7,8 +7,5 @@ body, #app{
   height: 100vh;
   font-family: 'Libre Franklin', serif;
    background:
-      linear-gradient(127deg, rgba(0,0,0,1) 20.71%, rgba(0,0,0,0.5) 90.71%),
-      linear-gradient(217deg, rgba(0,0,0,0.9), rgba(0,0,0,0.1) 80.71%),
-      linear-gradient(-217deg, rgba(0,0,0,1), rgba(0,0,0,0.3) 80.71%),
-      linear-gradient(-127deg, rgba(0,0,255,1) 100%, rgba(0,0,255,0.5) 20.71%);
+      radial-gradient(ellipse, #202060 10%, black 80%);
 }

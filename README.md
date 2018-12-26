@@ -1,7 +1,7 @@
 ## Electric Drums
 An Electric Drum web app bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![screenshot](https://i.ibb.co/h74v259/2011965-LXQBap-small-ce2c9b4a-bd56-4e02-8754-ff559779b0cb-1.png)
+![screenshot](https://i.ibb.co/JzSbdWX/Screen-Shot-2018-12-27-at-01-08-37.png)
 
 ## Demo
 For a live demo, visit [codepen](https://codepen.io/1xwebbyx1/full/LXQBap).
@@ -48,7 +48,7 @@ This Project was inspired by  suggested  user stories  at [freeCodeCamp](https:/
 ## ToDo
 
 - Implement PWA features
-- fix bug in safari
+- workaround audio delay in safari
 
 ## License
 
