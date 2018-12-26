@@ -4,7 +4,7 @@ An Electric Drum web app bootstrapped with [Create React App](https://github.com
 ![screenshot](https://i.ibb.co/JzSbdWX/Screen-Shot-2018-12-27-at-01-08-37.png)
 
 # Demo
-For a live demo, visit [codepen](https://codepen.io/1xwebbyx1/full/LXQBap).
+For a live demo, visit [codepen](https://codepen.io/1xwebbyx1/full/LXQBap) or [github](https://1xwebbyx1.github.io/electric-drums-pwa/).
 
 # Technologies
 Project is created with :
