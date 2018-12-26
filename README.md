@@ -18,10 +18,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/1XWebbyX1/drum-machine
+$ git clone https://github.com/1XWebbyX1/electric-drums-pwa
 
 # Go into the repository
-$ cd drum-machine
+$ cd electric-drums-pwa
 
 # Install dependencies
 $ npm install
