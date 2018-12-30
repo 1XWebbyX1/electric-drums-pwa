@@ -1,7 +1,7 @@
 {
-  "main.css": "/electric-drums-pwa/static/css/main.a769e21e.chunk.css",
-  "main.js": "/electric-drums-pwa/static/js/main.b2da7ede.chunk.js",
-  "main.js.map": "/electric-drums-pwa/static/js/main.b2da7ede.chunk.js.map",
+  "main.css": "/electric-drums-pwa/static/css/main.a4cc0b7d.chunk.css",
+  "main.js": "/electric-drums-pwa/static/js/main.a55ec8bd.chunk.js",
+  "main.js.map": "/electric-drums-pwa/static/js/main.a55ec8bd.chunk.js.map",
   "static/js/1.38937da1.chunk.js": "/electric-drums-pwa/static/js/1.38937da1.chunk.js",
   "static/js/1.38937da1.chunk.js.map": "/electric-drums-pwa/static/js/1.38937da1.chunk.js.map",
   "static/js/2.f8bfdb36.chunk.js": "/electric-drums-pwa/static/js/2.f8bfdb36.chunk.js",
@@ -16,8 +16,8 @@
   "static/js/6.a42ce5d5.chunk.js.map": "/electric-drums-pwa/static/js/6.a42ce5d5.chunk.js.map",
   "runtime~main.js": "/electric-drums-pwa/static/js/runtime~main.d34ed36d.js",
   "runtime~main.js.map": "/electric-drums-pwa/static/js/runtime~main.d34ed36d.js.map",
-  "static/css/main.a769e21e.chunk.css.map": "/electric-drums-pwa/static/css/main.a769e21e.chunk.css.map",
+  "static/css/main.a4cc0b7d.chunk.css.map": "/electric-drums-pwa/static/css/main.a4cc0b7d.chunk.css.map",
   "index.html": "/electric-drums-pwa/index.html",
-  "precache-manifest.a2a2f10cd0d598d6eecc1b0f1270bae4.js": "/electric-drums-pwa/precache-manifest.a2a2f10cd0d598d6eecc1b0f1270bae4.js",
+  "precache-manifest.1bc2faeaa0cf64f2b6c8c4c041f62c28.js": "/electric-drums-pwa/precache-manifest.1bc2faeaa0cf64f2b6c8c4c041f62c28.js",
   "service-worker.js": "/electric-drums-pwa/service-worker.js"
 }
