@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/electric-drums-pwa/static/js/runtime~main.d34ed36d.js"
   },
   {
-    "revision": "36b4cd908a04cf157c60ffb49287bdbb",
+    "revision": "feb1785c31af46121f3b82690d503812",
     "url": "/electric-drums-pwa/index.html"
   }
 ];
