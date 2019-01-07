@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8b419218df7d98cbd737",
-    "url": "/electric-drums-pwa/static/css/main.3081ec4f.chunk.css"
+    "revision": "41cf3f45d19fbe2bb641",
+    "url": "/electric-drums-pwa/static/css/main.5c9aced4.chunk.css"
   },
   {
-    "revision": "8b419218df7d98cbd737",
-    "url": "/electric-drums-pwa/static/js/main.8b419218.chunk.js"
+    "revision": "41cf3f45d19fbe2bb641",
+    "url": "/electric-drums-pwa/static/js/main.41cf3f45.chunk.js"
   },
   {
     "revision": "6908202dbaaf13d17a09",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/electric-drums-pwa/static/js/runtime~main.5beb872d.js"
   },
   {
-    "revision": "aed152e7aa2e6324bdc23bc26c5d5858",
+    "revision": "1858ab6dfc9e8b0ff971320073e7dc2c",
     "url": "/electric-drums-pwa/index.html"
   }
 ];
