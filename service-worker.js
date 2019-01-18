@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/electric-drums-pwa/precache-manifest.1430c92db50359e155a78b71bcc7b402.js"
+  "/electric-drums-pwa/precache-manifest.bcbfc91a595f19209c63656fcdd64965.js"
 );
 
 workbox.clientsClaim();
