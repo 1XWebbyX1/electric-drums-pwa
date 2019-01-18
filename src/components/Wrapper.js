@@ -1,14 +1,6 @@
 import React from 'react'
-import asyncComponent from './asyncComponent/async';
-
-
-const PadStore = asyncComponent(() =>
-      import('./PadStore').then(module => module.default)
-  );
-  const Svg = asyncComponent(() =>
-        import('./Svg').then(module => module.default)
-    );
-
+import Svg from './Svg'
+import PadStore from './PadStore'
 
 class Wrapper extends React.Component{
   render(){
