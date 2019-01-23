@@ -4,7 +4,7 @@ import { shallow, mount } from 'enzyme';
 // Our Dependencies
 import { expect } from '../../utils/chai';
 import sinon from 'sinon'
-import renderer from "react-test-renderer";
+
 
 // Our Component
 import DrumPad from './DrumPad';
@@ -15,19 +15,31 @@ configure({ adapter: new Adapter() });
 
 
 describe('DrumPad', () => {
+  var spy;
+  var output;
 
-  it("renders correctly", () => {
-    const output = renderer.create(
-        <DrumPad id="Q" text="Q" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" keyCode={81} display="mockText" />
-  ).toJSON();
+  beforeEach(() => {
+   output = shallow(
+      <DrumPad id="Q" text="Q" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" keyCode={81} display="mockText" />
+    );
+  })
 
-    expect(output).to.matchSnapshot();
+  it('should set audio element id to Q', () => {
+    const audio = output.find('audio');
+    expect(audio.prop('id')).to.equal('Q');
+  });
+
+  it('should set div id to  div-Q', () => {
+    const drumPad = output.find('div').first();
+    expect(drumPad.prop('id')).to.equal('div-Q');
+  });
+
+  it('should set h3 element id to  h3-Q', () => {
+    const h3 = output.find('h3');
+    expect(h3.prop('id')).to.equal('h3-Q');
   });
 
   describe('when a key is pressed', () => {
-    var spy;
-    var output;
-
     beforeEach(() => {
      spy = sinon.spy(DrumPad.prototype, 'handleClick');
      output = mount(
