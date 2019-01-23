@@ -1,14 +1,15 @@
 import React from 'react'
-import Svg from './Svg'
-import PadStore from './PadStore'
+import Svg from './SVG/Svg'
+import PadStore from './PadStore/PadStore'
 
 class Wrapper extends React.Component{
+
   render(){
     return(
       <div id='wrapper'>
         <Svg />
-        <h3 class='display-text'></h3>
-        <PadStore />
+        <h3 className='display-text'></h3>
+        <PadStore/>
       </div>
     )
   }
