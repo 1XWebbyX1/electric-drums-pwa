@@ -39,7 +39,7 @@ class DrumPad extends React.Component {
         node.classList.remove('float');
       }, 1000);
       //--------------------------------------
-      console.log(typeof this.props.updateText);
+
       this.props.updateText(this.props.display);
 
   }

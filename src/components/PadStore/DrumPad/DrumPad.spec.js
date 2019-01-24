@@ -50,6 +50,7 @@ describe('DrumPad', () => {
     afterEach(() => {
       spy.restore();
       output.unmount();
+      mockFunc.mockClear();
     });
 
     it('should call handleClick when props key equals pressed key', () => {
@@ -65,6 +66,31 @@ describe('DrumPad', () => {
       });
       expect(spy.notCalled).to.be.true;
     });
+  })
+
+  describe('when a drum pad is clicked', () => {
+    beforeEach(() => {
+     output = mount(
+        <DrumPad id="Q" text="Q" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" keyCode={81} display="mockText" updateText={mockFunc}/>
+      );
+    })
+
+    afterEach(() => {
+      output.unmount();
+      mockFunc.mockClear();
+    });
+
+    it('should call mock updateText function once', () => {
+      output.simulate('click');
+      expect(mockFunc.mock.calls.length).to.equal(1);
+    })
+
+    it('should add and remove float class', () => {
+      expect(output).to.not.have.className('float');
+      output.simulate('click');
+      expect(output).to.have.className('float');
+    })
+
   })
 
 
