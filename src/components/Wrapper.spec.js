@@ -15,19 +15,29 @@ describe('Wrapper', () => {
   let app;
 
   beforeEach(() => {
-   app = shallow(
+   app = mount(
       <Wrapper />
     );
   })
-
+  afterEach(() => {
+    app.unmount();
+  })
   it('renders nested components', () => {
     expect(app.find('Svg').length).to.equal(1);
     expect(app.find('PadStore').length).to.equal(1);
   });
 
   it('renders display text as Electric Drums', () => {
-    const h3 = app.find('h3');
+    const h3 = app.find('h3').first();
     expect(h3.text()).to.equal('Electric Drums');
   });
+
+  it('on updateText changes text', () => {
+   const drumpad = app.find('DrumPad').first();
+   drumpad.props().updateText('mockText');
+   app.update();
+   const h3 = app.find('h3').first();
+   expect(h3.text()).to.equal('mockText');
+ });
 
 })

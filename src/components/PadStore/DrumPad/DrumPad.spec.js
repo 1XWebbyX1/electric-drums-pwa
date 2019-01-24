@@ -26,17 +26,17 @@ describe('DrumPad', () => {
 
   it('should set audio element id to Q', () => {
     const audio = output.find('audio');
-    expect(audio.prop('id')).to.equal('Q');
+    expect(audio).to.have.id('Q');
   });
 
   it('should set div id to  div-Q', () => {
     const drumPad = output.find('div').first();
-    expect(drumPad.prop('id')).to.equal('div-Q');
+    expect(drumPad).to.have.id('div-Q');
   });
 
   it('should set h3 element id to  h3-Q', () => {
     const h3 = output.find('h3');
-    expect(h3.prop('id')).to.equal('h3-Q');
+    expect(h3).to.have.id('h3-Q');
   });
 
   describe('when a key is pressed', () => {
