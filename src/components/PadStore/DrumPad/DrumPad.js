@@ -1,5 +1,4 @@
 import React from 'react'
-import $ from 'jquery'
 
 class DrumPad extends React.Component {
   constructor(props){
@@ -11,9 +10,8 @@ class DrumPad extends React.Component {
   }
 
   //adding event listener _______________________________________
-  componentDidMount() {
+  componentDidMount() { //using dom manipulation because react not supporting multiple event listeners on same div
     document.addEventListener('keydown', this.handleKeyPress);
-    $('.display-text').text('Electric drums');
   }
 
   //removing event listener________________________________________
@@ -41,16 +39,8 @@ class DrumPad extends React.Component {
         node.classList.remove('float');
       }, 1000);
       //--------------------------------------
-
-      $('.display-text').animate(
-        { opacity: 0.5 },
-        100,
-        function() {
-         $('.display-text').animate({ opacity: 1}, 100);
-       });
-
-      //update text content
-      $('.display-text').text(this.props.display);
+      console.log(typeof this.props.updateText);
+      this.props.updateText(this.props.display);
 
   }
 

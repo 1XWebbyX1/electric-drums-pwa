@@ -4,12 +4,11 @@ import { shallow, mount } from 'enzyme';
 // Our Dependencies
 import { expect } from '../../utils/chai';
 import sinon from 'sinon'
-
-
-// Our Component
-import DrumPad from './DrumPad';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+// Our Component
+import DrumPad from './DrumPad';
+
 
 configure({ adapter: new Adapter() });
 
@@ -17,10 +16,11 @@ configure({ adapter: new Adapter() });
 describe('DrumPad', () => {
   var spy;
   var output;
+  const mockFunc = jest.fn();
 
   beforeEach(() => {
    output = shallow(
-      <DrumPad id="Q" text="Q" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" keyCode={81} display="mockText" />
+      <DrumPad id="Q" text="Q" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" keyCode={81} display="mockText" updateText={mockFunc}/>
     );
   })
 
@@ -43,12 +43,13 @@ describe('DrumPad', () => {
     beforeEach(() => {
      spy = sinon.spy(DrumPad.prototype, 'handleClick');
      output = mount(
-        <DrumPad id="Q" text="Q" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" keyCode={81} display="mockText" />
+        <DrumPad id="Q" text="Q" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" keyCode={81} display="mockText" updateText={mockFunc}/>
       );
     })
 
     afterEach(() => {
       spy.restore();
+      output.unmount();
     });
 
     it('should call handleClick when props key equals pressed key', () => {

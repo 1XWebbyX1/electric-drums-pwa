@@ -6,7 +6,7 @@ import store from '../../data/drumPadsData'
 class PadStore extends React.Component {
   render() {
       var padStore = store.map( a =>
-         <DrumPad parentNode={this.props.parentNode} id={a.key} text={a.key} src={a.audio} keyCode={a.keyCode} display={a.text}/>
+         <DrumPad id={a.key} text={a.key} src={a.audio} keyCode={a.keyCode} display={a.text} updateText={this.props.updateText}/>
     );
 
     return (
